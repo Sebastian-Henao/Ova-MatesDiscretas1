@@ -3,32 +3,20 @@ package aplicacion;
 import libinverso.JavaInverso;
 
 public class Aplicacion {
+	JavaInverso inversor = null;
+	static {
+		System.loadLibrary("inv"); // usa libinv.so
+	}
 
-    // Declaramos un objeto que representa la clase JavaInverso
-    JavaInverso inversor = null;
+	public Aplicacion() {
+		this.inversor = new JavaInverso();
+		int a = 235;
+		int m = 37;
+		String resultadoJson = inversor.inversoJSON(a, m);
+		System.out.println("Resultado en JSON: " + resultadoJson);
+	}
 
-    // Cargar la librería compartida generada (libinverso.so o inverso.dll)
-    static {
-        System.loadLibrary("inv");
-    }
-
-    public Aplicacion() {
-        this.inversor = new JavaInverso();
-
-        // Aquí puedes probar varios casos
-        int a = 3;
-        int m = 7;
-
-        int resultado = inversor.inverso(a, m);
-
-        if (resultado == 0) {
-            System.out.println("No existe inverso de " + a + " mod " + m);
-        } else {
-            System.out.println("El inverso de " + a + " mod " + m + " es: " + resultado);
-        }
-    }
-
-    public static void main(String[] args) {
-        new Aplicacion();
+	public static void main(String[] args) {
+		new Aplicacion();
     }
 }

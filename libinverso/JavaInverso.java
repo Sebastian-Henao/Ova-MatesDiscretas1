@@ -1,5 +1,5 @@
 package libinverso;
 
 public class JavaInverso {
-	public native int inverso(int a, int m);
+	public native String inversoJSON(int a, int m);
 }

@@ -9,10 +9,10 @@ extern "C" {
 #endif
 /*
  * Class:     libinverso_JavaInverso
- * Method:    inverso
- * Signature: (II)I
+ * Method:    inversoJSON
+ * Signature: (II)Ljava/lang/String;
  */
-JNIEXPORT jint JNICALL Java_libinverso_JavaInverso_inverso
+JNIEXPORT jstring JNICALL Java_libinverso_JavaInverso_inversoJSON
   (JNIEnv *, jobject, jint, jint);
 
 #ifdef __cplusplus
