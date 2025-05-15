@@ -34,7 +34,7 @@ int calcularInverso(int a, int m) {
 	return x0;
 }
 
-JNIEXPORT jstring JNICALL Java_libinverso_JavaInverso_inversoJSON
+JNIEXPORT jstring JNICALL Java_inversojni_lib_JavaInverso_inversoJSON
   (JNIEnv *env, jobject obj, jint a, jint m){
 	int inverso = 0;
 	if (mcd(a, m) == 1) {

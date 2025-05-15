@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.edu.uceva</groupId>
-    <artifactId>inverso-jni</artifactId>
+    <artifactId>libinverso</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>inverso-jni</name>
     <description>inverso-jni</description>

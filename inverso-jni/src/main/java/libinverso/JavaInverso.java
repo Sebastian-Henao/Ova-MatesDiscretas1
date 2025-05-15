@@ -1,4 +1,4 @@
-package inversojni.lib;
+package libinverso;
 
 /**
  *  Clase que representa las funciones de la biblioteca dinamica JNI
